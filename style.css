@@ -1,0 +1,152 @@
+ /* Définition des polices personnalisées */
+
+ @font-face
+ {
+    font-family: "Tox Typewriter";
+    font-style: normal;
+    font-weight: normal;
+    src: src("police/Tox Typewriter"), url("Tox Typewriter.ttf") format("ttf");
+    
+    font-family: "Gabrielle";
+    font-style: normal;
+    font-weight: normal;
+    src: src("police/Gabrielle"), url("Gabrielle.ttf") format("ttf");
+    }
+
+/* Eléments principaux de la page */
+
+
+#bloc_page
+{
+      margin: auto;
+      width: 100%;
+}
+
+body
+{
+   background-color: #79AC91;
+   display: flex;
+   text-align: justify;
+}
+
+
+/* Header */
+
+#banniere
+
+{
+   background: url(images/banniere.jpg) no-repeat;
+   width: 100%;
+   height: 200px;
+   text-align:center;
+}
+
+h1
+{
+   color: white;
+   padding-top: 80px;
+   font-size: xx-large;
+}
+
+/* Navigation */
+
+h2
+
+{
+font-family: "Gabrielle";
+font-size: xx-large;
+}
+
+p
+{
+font-family: "Tox Typewriter", "Comic sans MS";
+font-size: large;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+    font-family: "Gabrielle";
+}
+
+nav li
+{
+    margin-right: 30px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+article
+{
+   width:  100%;
+}
+
+#lamasticus
+{
+    display: flex;
+    text-align: center;
+}
+
+
+aside
+{
+    position: relative;
+    background-color: #5E4760;
+    box-shadow: 0px 2px 5px #7AB581;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Footer */
+
+
+footer
+{
+   display: flex;
+}
+
+#formulaire
+{
+   width: 30%;
+}
+
+#map
+{
+    width: 40%;
+}
+
+#contact
+{
+   width: 30%;
+}
+
+footer img
+{
+   margin-right: 30px;
+}
+
+a:hover
+
+{
+   text-decoration: underline overline;
+   color: red;
+}
+
+/* Pour portable (Rendre le site responsive) */
+
+@media screen and (max-width:  1024px)
+{
+   #bloc_page
+   { width : auto;
+   }
+  
+   footer
+   {
+   flex-direction: column;
+   }
+}
+
